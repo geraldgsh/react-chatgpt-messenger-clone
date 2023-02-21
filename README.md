@@ -1,5 +1,9 @@
 # React ChatGPT messenger clone
 
+### Snapshot
+
+![](https://github.com/geraldgsh/react-chatgpt-messenger-clone/blob/main/public/chatgptresponsive.jpg)
+
 This is a ChatGPT messenger app built with ReactJS, TailwindCSS, NextJs, Firebase, OAuth, TypeScript, CSS & HTML.
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
@@ -35,6 +39,7 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 [Vercel](https://console.cloud.google.com/)
 [Prettier](https://prettier.io/)
 [Husky](https://www.freecodecamp.org/news/how-to-add-commit-hooks-to-git-with-husky-to-automate-code-tasks/)
+[amiresponsive](https://ui.dev/amiresponsive)
 
 ### Wiki
 
