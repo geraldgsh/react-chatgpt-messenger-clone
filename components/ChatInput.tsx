@@ -18,7 +18,7 @@ function ChatInput({ chatId }: Props) {
 	const { data: model } = useSWR("model", {
 		fallbackData: "text-davinci-003",
 	});
-	const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
+	const sendMessage = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		if (!prompt) return;
 		const input = prompt.trim();
@@ -46,7 +46,7 @@ function ChatInput({ chatId }: Props) {
 			message
 		);
 
-		const notification = toast.loading("ChatGPT is pondering...");
+		const notification = toast.loading("ChatGPT is pondering... 🤔");
 		await fetch("/api/askQuestion", {
 			method: "POST",
 			headers: {

@@ -3,8 +3,7 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
-		"start": "next start",
-		"prepare": "husky install"
+		"start": "next start"
 	},
 	"dependencies": {
 		"@heroicons/react": "^2.0.15",
