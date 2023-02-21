@@ -33,6 +33,8 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 [Remove line breaks](https://www.textfixer.com/tools/remove-line-breaks.php)
 [Firebase](https://console.firebase.google.com/)
 [Vercel](https://console.cloud.google.com/)
+[Prettier](https://prettier.io/)
+[Husky](https://www.freecodecamp.org/news/how-to-add-commit-hooks-to-git-with-husky-to-automate-code-tasks/)
 
 ### Wiki
 
