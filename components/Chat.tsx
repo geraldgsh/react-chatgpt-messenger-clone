@@ -2,6 +2,7 @@
 import { ArrowDownCircleIcon } from "@heroicons/react/24/solid";
 import { collection, orderBy, query } from "firebase/firestore";
 import { useSession } from "next-auth/react";
+import { useEffect, useRef } from "react";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { db } from "../firebase";
 import Message from "./Message";
@@ -26,8 +27,23 @@ function Chat({ chatId }: Props) {
 				orderBy("createdAt", "asc")
 			)
 	);
+	const containerRef = useRef<null | HTMLDivElement>(null);
+
+	useEffect(() => {
+		if (containerRef && containerRef.current) {
+			const element = containerRef.current;
+			element.scroll({
+				top: element.scrollHeight,
+				left: 0,
+				behavior: "smooth",
+			});
+		}
+	}, [containerRef, messages]);
 	return (
-		<div className="flex-1 overflow-y-auto overflow-x-auto">
+		<div
+			ref={containerRef}
+			className="flex-1 overflow-y-auto overflow-x-auto"
+		>
 			{messages?.empty && (
 				<>
 					<p className="mt-10 text-center text-white">
