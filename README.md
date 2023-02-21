@@ -40,6 +40,7 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 [Prettier](https://prettier.io/)
 [Husky](https://www.freecodecamp.org/news/how-to-add-commit-hooks-to-git-with-husky-to-automate-code-tasks/)
 [amiresponsive](https://ui.dev/amiresponsive)
+[GH SSH](https://www.youtube.com/watch?v=1Km-x_8DSpk)
 
 ### Wiki
 
