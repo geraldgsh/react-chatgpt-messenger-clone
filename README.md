@@ -1,6 +1,6 @@
 # React ChatGPT messenger clone
 
-This is a ChatGPT messenger app built with ReactJS, TailwindCSS, NextJs, Firebase, OAuth, JS, CSS & HTML.
+This is a ChatGPT messenger app built with ReactJS, TailwindCSS, NextJs, Firebase, OAuth, TypeScript, CSS & HTML.
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
@@ -48,7 +48,7 @@ Checkout our [wikipage](https://github.com/geraldgsh/react-chatgpt-messenger-clo
 
 Clone repo, run `npm install` and `npm run dev`.
 
-##### Add ENV
+#### Add ENV
 
 Create an env file called '.env.local' with the follow content`:
 
@@ -60,8 +60,6 @@ NEXTAUTH_SECRET=
 OPENAI_API_KEY=
 FIREBASE_SERVICE_ACCOUNT_KEY=
 ```
-
-``
 
 #### Prerequisites
 
@@ -77,8 +75,7 @@ https://github.com/geraldgsh/react-chatgpt-messenger-clone
 
 ### Future feature
 
-1. Add delete button for individual weather card
-2. Get a google place local image on page background using API for local weather
+1.
 
 👤 **Author**
 
