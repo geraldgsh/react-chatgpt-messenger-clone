@@ -37,15 +37,15 @@ function HomePage() {
 			<div className="flex space-x-2 text-center">
 				{infoColumn.map((info) => {
 					return (
-						<div>
+						<div key={info?.title}>
 							<div className="flex flex-col items-center justify-center mb-5">
-								{info.icon}
-								<h2>{info.title}</h2>
+								{info?.icon}
+								<h2>{info?.title}</h2>
 							</div>
 							<div className="space-y-2">
-								<p className="infoText">{info.desc1}</p>
-								<p className="infoText">{info.desc2}</p>
-								<p className="infoText">{info.desc3}</p>
+								<p className="infoText">{info?.desc1}</p>
+								<p className="infoText">{info?.desc2}</p>
+								<p className="infoText">{info?.desc3}</p>
 							</div>
 						</div>
 					);

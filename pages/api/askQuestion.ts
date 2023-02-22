@@ -25,7 +25,7 @@ export default async function handler(
 	const response = await query(prompt, chatId, model);
 	const message: Message = {
 		text: response || "ChatGPT was unable to find an answer to that!",
-		createdAt: admin.firestore.Timestamp.now(),
+		createdAt: admin?.firestore?.Timestamp?.now(),
 		user: {
 			_id: "ChatGPT",
 			name: "ChatGPT",

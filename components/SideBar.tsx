@@ -13,7 +13,7 @@ function SideBar() {
 	const [chats, loading, error] = useCollection(
 		session &&
 			query(
-				collection(db, "users", session.user?.email!, "chats"),
+				collection(db, "users", session?.user?.email!, "chats"),
 				orderBy("createdAt", "asc")
 			)
 	);
@@ -33,7 +33,7 @@ function SideBar() {
 							</div>
 						)}
 						{chats?.docs.map((chat) => (
-							<ChatRow key={chat.id} id={chat.id} />
+							<ChatRow key={chat?.id} id={chat?.id} />
 						))}
 					</div>
 				</div>
@@ -41,7 +41,7 @@ function SideBar() {
 			{session && (
 				<button onClick={() => signOut()}>
 					<img
-						src={session.user?.image!}
+						src={session?.user?.image!}
 						alt="Profile Pic"
 						className="h-12 w-12 rounded-full cursor-pointer mx-auto mb-2 hover:opacity-50"
 					/>
