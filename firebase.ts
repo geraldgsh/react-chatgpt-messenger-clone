@@ -1,11 +1,10 @@
 import { getApp, getApps, initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import { getAnalytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-	apiKey: "AIzaSyDxZl8FNlK05HMnqSJcwcLaz3ihR1pfhUY",
+	apiKey: process.env.FIREBASE_API_KEY!,
 	authDomain: "react-chatgpt-messenger-clone.firebaseapp.com",
 	projectId: "react-chatgpt-messenger-clone",
 	storageBucket: "react-chatgpt-messenger-clone.appspot.com",
